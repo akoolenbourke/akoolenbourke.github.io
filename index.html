@@ -1,1 +1,77 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaron Koolen-Bourke Portfolio</title>
+   <link rel="stylesheet" href="styles.css">
+   <script type="text/javascript" src="scripts.js"></script>
+</head>
+<body>
+    <header>Aaron Koolen-Bourke</header>
+    
+    <div style="text-align:center">Programmer, Auckland, New Zealand</div>
+
+    <div><a class="link" href="https://www.linkedin.com/in/aaronkoolen/">LinkedIn</a> | <a class="link" href="https://github.com/akoolenbourke">GitHub</a></div>
+
+    <div class="grid-container">
+        <!-- Add project links and images below -->
+        <a class="grid-item" onmouseover="togglePopup(0)" onmouseleave="togglePopup(-1)" href="https://www.talesoftheshire.com/">
+            <img src="tots.png" alt="Tales of the Shire">
+            <div class="popup"><div class="popup-header">Tales of the Shire (TBA)</div><br />
+            <div class="popup-line">Music/SFX playback system and world audio editing tools</div>
+                <div class="popup-line">Reflection based schema system for importing designer data</div>
+                    <div class="popup-line">Introduced automated project validation via Odin Validator</div>
+                        <div class="popup-line">Full item system refactor to allow for runtime item variations</div>
+                            <div class="popup-line">Introduced async (UniTask) to the game so we could serialise gameplay elements easily</div>
+            </div>
+        </a>
+        <a class="grid-item" onmouseover="togglePopup(1)" onmouseleave="togglePopup(-1)" href="https://www.monsterracingleague.com/">
+            <img src="mrl.jpg" alt="Project 2">
+            <div class="popup"><div class="popup-header">Monster Racing League (PC)</div>
+            <div class="popup-line">Built network-ready end to end game skeleton</div>
+            <div class="popup-line">Created and implemented the initial weapon system</div>
+            <div class="popup-line">Built the lap-counting system</div>
+            </div>
+        </a>
+        <a class="grid-item" onmouseover="togglePopup(2)" onmouseleave="togglePopup(-1)" href="https://www.doomsdayvaultgame.com/">
+            <img src="ddv.png" alt="Project 2">
+            <div class="popup"><div class="popup-header">Doomsday Vault (Mac, PC, iOS, Nintendo Switch)</div>
+            <div class="popup-line">Bootstrapped the game using Entitas Entity Component System</div>
+                <div class="popup-line">Responsible for the Nintendo Switch Port</div>
+                    <div class="popup-line">Implemented buoyancy, power station, boost-pads, object dragging and killer stones</div>
+                        <div class="popup-line">Created a tool to build and upload the game to EOS and Steam</div>
+            </div>
+        </a>
+        <a class="grid-item" onmouseover="togglePopup(3)" onmouseleave="togglePopup(-1)" href="https://dosgames.com/game/seek-and-destroy/">
+            <img src="seek.jpg" alt="Project 4">
+            <div class="popup"><div class="popup-header">Seek and Destroy (PC)</div><br />
+            <div class="popup-line">The first commercially released game I wrote</div>
+            <div class="popup-line">Apart from the music player I wrote all code, tools and designed and tested all levels in the game</div>
+            <div class="popup-line">Tools written on an Amiga and transferred to PC via floppy</div>
+            <div class="popup-line">Discovered how amazing linkers were :)</div>
+            <div class="popup-line">Lost all sourcode (tape) in a flood</div>
+            </div>
+        </a>
+        <a class="grid-item" onmouseover="togglePopup(4)" onmouseleave="togglePopup(-1)" href="https://store.steampowered.com/app/327910/7th_Legion/">
+            <img src="7thlegion.jpg" alt="Project 5">
+            <div class="popup"><div class="popup-header">7th Legion (PC)</div>
+            <div class="popup-line">Lovingly called "The game we shall not speak of" by myself and best friend who also worked on it I spent a few months
+            helping towards the end of this game.</div>
+            <div class="popup-line">I built the AI logic. Building, resource collecting and unit control.</div>
+            <div class="popup-line">I built 7 iterations of the AI which I passed on to the lead developer who was finishing it up at Microprose. I found out years later that only version 4 was
+                integrated into the game. Hire me and provide a good quality whiskey and I will regail you with some interesting stories about this project.</div>
+            </div>
+        </a>
+        <a class="grid-item" onmouseover="togglePopup(5)" onmouseleave="togglePopup(-1)" href="https://wingate.com">
+            <img src="wingate.jpg" alt="Project 3">
+            <div class="popup"><div class="popup-header">WinGate (PC)</div><br />
+            <div class="popup-line">Before re-entering games, I spent 10 years developing WinGate. Too many features to list (See LinkedIn) but a couple were</div>
+            <div class="popup-line">Runtime localisation system that hooked Win32 APIs (with mhook) and returned localised resources; strings, dialogs and controls.</div>
+            <div class="popup-line">Automated crashdump retrieval an parsing system. Retrieved info from the crashdump, pulled out the correct version of the source code, grabbed a snippet of code around the offending line and
+            then sent an email to support staff. This saved countless hours of support time and heped us fix bugs even if the customer didn't report them to us.</div>
+            </div>
+        </a>
+    </div>
+</body>
+</html>

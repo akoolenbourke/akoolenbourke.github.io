@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaron Koolen-Bourke Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="scripts.js"></script>
+</head>
+<body>
+    <header>Tales of the Shire</header>
+
+    <div class="grid-container-single">
+        <!-- Add project links and images below -->
+        <div class="project-image">
+            <img src="tots.png" alt="Tales of the Shire">
+        </div>
+        <div class="project-blurb">
+            I joined Weta Workshop at the end of 2022 to work on Tales of the Shire. I touched many aspects of the game codebase as well as bringing my engineering experience to help introduce
+            the team to more "serious" engineering practices. I introduced project validation via the Odin Validator tool for Unity which ran as part of builds so we could get reports
+        </div>
+        <div class="project-writeup">
+            <h1>Custom music and SFX playback system</h1>
+            The music director wanted to create arrangements of themes that could be used throughout the world and seamlessly transition between them as you moved, say, from the village centre into one of the stores.
+            I built a layered music system, tools and API so that music sequences could be constructed with multiple layers and during gameplay, transition the music layers in and out as required.
+            <br/>            
+            <br/>            
+            I built a tool that enabled audio designers to build a volume and music graph they could place in the world and the playback system would transition according to the player's location on the graph.
+            <br/>            
+            <br/>            
+            I used a simple technique that I used for Monster Racing League's buff system which was to build a simple 'chain' of audio settings to provide modifications to some base value. That could then spew out a final value that got applied to the final audio.
+            Each subsystem of the audio system just accepted a setting control and could attach itself to the end of the 'chain' and pass the controller on to the next subsystem.
+        </div>
+    </div>
+</body>
+</html>
